@@ -1,0 +1,16 @@
+@import url('./common.css');
+
+@import url('./header.css');
+/*"./header.css";*/
+@import url('./hero.css');
+/*"./hero.css";*/
+@import url('./features.css');
+/*"./features.css";*/
+@import url('./team.css');
+/*"./team.css";*/
+@import url('./portfolio.css');
+/*"./portfolio.css";*/
+@import url('./footer.css');
+/*"./footer.css";*/
+
+@import url('./modal.css');
