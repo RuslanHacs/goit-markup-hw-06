@@ -47,9 +47,11 @@
 
 .mobile-menu-container {
     display: flex;
+    position: relative;
     flex-direction: column;
     height: 100%;
-    padding: 72px 40px;
+    padding-top: 72px;
+    padding-bottom: 40px;
 }
 
 .menu-nav-list {

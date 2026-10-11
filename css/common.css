@@ -211,8 +211,3 @@ img {
 .socil-link:focus {
     background-color: #31D0AA;
 }
-
-/*приховуємо секції */
-.hide {
-    display: none !important;
-}
