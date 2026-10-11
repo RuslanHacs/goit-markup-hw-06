@@ -34,12 +34,13 @@
     left: 50%;
     transform: translateX(-50%) translateY(-95%);
     opacity: 0;
-    max-width: 408px;
+    max-width: 288px;
     width: 100%;
     min-height: 582px;
-
+    height: 619px;
+    padding: 72px 16px 24px;
     border-radius: 4px;
-    padding: 72px 24px 24px;
+    /* padding: 72px 24px 24px;*/
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -72,49 +73,6 @@
 
 }
 
-.close-btn {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 0;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 24px;
-    width: 24px;
-    height: 24px;
-    background-color: #e7e9fc;
-    /*тут задаємо плавні переходи для hover focus */
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color, border-color;
-}
-
-
-
-.close-icon {
-
-    color: #2e2f42;
-    /* Додаємо transition для плавного переходу кольору іконки */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Стилі при наведенні/фокусі на кнопку */
-.close-btn:hover,
-.close-btn:focus {
-    background-color: #404bbf;
-    /* Змінюємо фон самої кнопки */
-    border-color: #404bbf;
-    /* колір рамки */
-}
-
-.close-btn:hover>.close-icon,
-.close-btn:focus>.close-icon {
-
-    /*змінюємо колір самої іконки*/
-    color: #fff;
-}
 
 .modal-capsion {
     font-weight: 500;
@@ -231,6 +189,8 @@
     /* Відступ між квадратом та текстом */
     cursor: pointer;
     user-select: none;
+    min-width: 256px;
+
 
 
 }
@@ -240,6 +200,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -289,9 +250,29 @@
     opacity: 1;
 }
 
+.checkbox-text {
+
+
+
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+
+}
+
 .modal-form-link {
     line-height: 1.16667;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-window {
+
+        padding: 72px 24px 24px;
+        width: 408px;
+        height: 582px;
+        max-width: 408px;
+
+    }
 }

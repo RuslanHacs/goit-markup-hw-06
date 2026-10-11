@@ -27,11 +27,14 @@ ul {
 
 a {
     text-decoration: none;
+    color: currentColor;
 
 }
 
 img {
     display: block;
+    min-width: 100%;
+    height: auto;
 }
 
 .sr-only {
@@ -47,16 +50,40 @@ img {
     margin: -1px;
 }
 
+/*змінюємо стилі контейнера mobile first*/
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
 
 }
 
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 16px;
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+
+    .section-padd {
+
+        padding: 120px 0;
+    }
+}
+
+
+
+
+
 .section-padd {
 
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .about-txt {
@@ -102,4 +129,90 @@ img {
 
     display: inline-block;
     /* Щоб марджини та падінги працювали коректно */
+}
+
+/*general style for button in modal and mobile menu*/
+.close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+    /*тут задаємо плавні переходи для hover focus */
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, border-color;
+}
+
+
+
+.close-icon {
+
+    color: #2e2f42;
+    /* Додаємо transition для плавного переходу кольору іконки */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стилі при наведенні/фокусі на кнопку */
+.close-btn:hover,
+.close-btn:focus {
+    background-color: #404bbf;
+    /* Змінюємо фон самої кнопки */
+    border-color: #404bbf;
+    /* колір рамки */
+}
+
+.close-btn:hover>.close-icon,
+.close-btn:focus>.close-icon {
+
+    /*змінюємо колір самої іконки*/
+    color: #fff;
+}
+
+.social-list {
+    display: flex;
+    gap: 16px;
+    min-width: 208px;
+}
+
+.socil-item {
+    /*border-radius: 40px;*/
+    width: 40px;
+    height: 40px;
+    /* background: #4d5ae5;*/
+}
+
+.social-icons {
+    color: #f4f4fd;
+}
+
+.socil-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    /*   плавна анімація  для background-color */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* прибир дублювання розмірів та радіусів*/
+.socil-link:hover,
+.socil-link:focus {
+    background-color: #31D0AA;
+}
+
+/*приховуємо секції */
+.hide {
+    display: none !important;
 }
