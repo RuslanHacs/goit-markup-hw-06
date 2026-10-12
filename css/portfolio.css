@@ -9,20 +9,24 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 48px;
+    gap: 72px;
 
 
 
 }
 
+
+
 .portf-item {
-    max-width: 320px;
+    max-width: 360px;
     width: 320px;
+    min-width: 288px;
 
     background-color: #fff;
     /* Плавна анімація для тіні */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 /* Ефекти ховеру та фокусу для всієї картки */
 .portf-item:hover,
@@ -34,6 +38,10 @@
 
 /* --- Оверлей (Виїжджаючий текст) --- */
 .portfolio-trump {
+    max-width: 360px;
+    width: 288px;
+    min-width: 288px;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
@@ -93,17 +101,28 @@
 
 @media only screen and (min-width: 768px) {
     .portfolio-list {
-        gap: 48px 24px;
+        gap: 72px 24px;
     }
 
     .portf-item {
         width: calc((100% - 24px) / 2);
     }
+
+    .portfolio-trump {
+        max-width: 360px;
+        width: 100%;
+        min-width: 360px;
+    }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
+    .portfolio-list {
+        gap: 48px 24px;
+    }
+
     .portf-item {
         width: calc((100% - 24px * 2) / 3);
+
 
 
     }

@@ -33,7 +33,11 @@ a {
 
 img {
     display: block;
-    min-width: 100%;
+
+
+    min-width: 264px;
+    max-width: 360px;
+
     height: auto;
 }
 
@@ -53,9 +57,15 @@ img {
 /*змінюємо стилі контейнера mobile first*/
 .container {
     max-width: 320px;
+    min-width: 288px;
     padding: 0 16px;
     margin: 0 auto;
 
+}
+
+.section-padd {
+
+    padding: 96px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -81,10 +91,6 @@ img {
 
 
 
-.section-padd {
-
-    padding: 96px 0;
-}
 
 .about-txt {
     font-weight: 700;

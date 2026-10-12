@@ -17,8 +17,9 @@
 }
 
 .card {
-    max-width: 264px;
-    width: 264px;
+    max-width: 360px;
+    width: 320px;
+    min-width: 264px;
     background-color: #fff;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),

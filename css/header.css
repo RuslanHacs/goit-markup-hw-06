@@ -37,7 +37,7 @@
 
 /* --- Навігація --- */
 /*120px у планшет версії*/
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
     .main-nav {
         margin-left: 120px;
         margin-right: auto;
@@ -52,7 +52,7 @@
 }
 
 /*меню навігація прихована до 768 px*/
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
     .main-nav {
         display: none;
     }
@@ -102,7 +102,7 @@
     /* красиво штовхає контакти в крайній правий кут */
 }
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
     .contact {
         display: none;
     }
@@ -113,7 +113,7 @@
     gap: 40px;
 }
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
     .contact-list {
         display: flex;
 
@@ -135,7 +135,7 @@
 }
 
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 768px) {
     .cn-link {
         display: flex;
         /* додано, щоб падінги працювали коректно */
