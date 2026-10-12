@@ -193,6 +193,10 @@
         gap: 24px;
     }
 
+    .footer-form-input {
+        width: 264px;
+    }
+
     .wrap-logo {
         align-items: flex-start;
     }

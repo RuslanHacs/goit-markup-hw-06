@@ -29,6 +29,12 @@
 
 }
 
+.features-text {
+
+    font-weight: 500;
+
+}
+
 @media screen and (min-width: 768px) {
 
 
@@ -64,6 +70,12 @@
         font-size: 20px;
         line-height: 1.2;
         text-align: left;
+    }
+
+    .features-text {
+
+        font-weight: 400;
+
     }
 
     .features-item {
