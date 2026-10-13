@@ -199,10 +199,12 @@
 
     .wrap-logo {
         align-items: flex-start;
+        margin-bottom: 0;
     }
 
     .wrap-social {
         display: block;
+        margin-bottom: 0;
     }
 }
 
