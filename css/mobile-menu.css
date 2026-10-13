@@ -142,5 +142,6 @@
 }
 
 .mobile-menu .social-list {
+    margin-top: 48px;
     gap: 40px;
 }
